@@ -33,6 +33,7 @@ export function useSound(
       volume: unref(volume) as number,
       rate: unref(playbackRate) as number,
       onload: handleLoad,
+      autoplay: autoplay,
       ...delegated,
     })
   })
@@ -46,6 +47,7 @@ export function useSound(
           volume: unref(volume) as number,
           rate: unref(playbackRate) as number,
           onload: handleLoad,
+          autoplay: autoplay,
           ...delegated,
         })
       }
